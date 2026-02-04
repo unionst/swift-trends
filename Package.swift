@@ -1,11 +1,11 @@
-// swift-tools-version:6.2
+// swift-tools-version:6.0
 
 import PackageDescription
 
 let package = Package(
     name: "swift-trends",
     platforms: [
-        .iOS(.v18)
+        .iOS("26.0")
     ],
     products: [
         .library(
@@ -13,7 +13,7 @@ let package = Package(
             targets: ["SwiftTrends"])
     ],
     dependencies: [
-        .package(path: "../union-chat-source")
+        .package(url: "https://github.com/unionst/union-chat-source", exact: "0.7.1-beta.21")
     ],
     targets: [
         .target(
