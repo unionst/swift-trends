@@ -48,8 +48,9 @@ public struct TrendsChat: View {
             guard let text else { return }
             await sendMessage(text)
         }
-        .task {
-            await sendMessage("How's the app doing? Any interesting trends or things I should know about?")
+        .onAppear {
+            let role = ChatRole.user(id: "assistant", displayName: "Trends")
+            state.messages.append(TrendsMessage(text: "Hey! Ask me anything about your \(appName) data.", role: role))
         }
     }
 

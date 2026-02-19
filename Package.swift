@@ -13,13 +13,13 @@ let package = Package(
             targets: ["SwiftTrends"])
     ],
     dependencies: [
-        .package(url: "https://github.com/unionst/union-chat", exact: "0.7.1-beta.20")
+        .package(url: "https://github.com/unionst/union-chat-source", exact: "0.7.1-beta.23")
     ],
     targets: [
         .target(
             name: "SwiftTrends",
             dependencies: [
-                .product(name: "UnionChat", package: "union-chat")
+                .product(name: "UnionChat", package: "union-chat-source")
             ],
             path: "Sources/SwiftTrends"
         )

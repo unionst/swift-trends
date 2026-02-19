@@ -1,5 +1,5 @@
 {
-  "originHash" : "5e5396c3188f7ee2113b5b8b8318b377930e3b5aaf5d7f406cf7744d33c1f06f",
+  "originHash" : "d50076122aae955e744cf44a69920b7ce79e0ab80fa3ca84e8a3e6c624def20e",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/unionst/union-chat-source",
       "state" : {
-        "revision" : "521e70dbc3d0deec5dc60280fb32b34545af38bc",
-        "version" : "0.7.1-beta.21"
+        "revision" : "e9b35ca036954ef5eda9eaf976b1ccfd342a5302",
+        "version" : "0.7.1-beta.23"
       }
     }
   ],
