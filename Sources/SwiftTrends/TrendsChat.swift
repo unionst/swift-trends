@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 import UnionChat
 
-@Observable
+@MainActor @Observable
 final class ChatState {
     var messages: [TrendsMessage] = []
     var isTyping = false
