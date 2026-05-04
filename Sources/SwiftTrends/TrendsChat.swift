@@ -40,6 +40,7 @@ public struct TrendsChat: View {
         Chat(state.messages, typingUsers: state.isTyping ? [.user(id: "trends-typing", displayName: "Trends")] : []) { msg in
             Message(msg.text, role: msg.role, timestamp: msg.timestamp)
         }
+        .chatSenderInfo(.always)
         .chatHeader {
             ChatHeader(title: "\(appName) Trends", avatar: appIcon)
         }
